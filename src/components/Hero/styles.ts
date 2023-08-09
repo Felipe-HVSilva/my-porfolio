@@ -5,6 +5,8 @@ export const Container = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+
+
  
   height: 90vh;
 
@@ -40,6 +42,22 @@ export const Container = styled.main`
 
     &:hover {
       filter: brightness(0.9);
+    }
+  }
+
+  @media (max-width:998px) {
+    height: 60vh;
+  }
+
+  @media (max-width:489px) {
+    padding: 0 1.5rem;
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+      
     }
   }
 

@@ -21,13 +21,27 @@ export const Container = styled.section`
 
     a {
       transition:  transform 0.2s;
-      
+
       img {
         max-width: 500px;
       }
 
       &:hover {
         transform: scale(1.1);
+      }
+    }
+
+    @media (max-width:1100px) {
+      flex-direction: column;
+
+      a {
+
+        img {
+          max-width: 400px;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
